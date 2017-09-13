@@ -1,0 +1,106 @@
+[
+    {
+        "merged": "E:\\2017\\InfoMind\\github\\jejuFarm (2)\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_light.xml",
+        "source": "C:\\Users\\Round\\.android\\build-cache\\697503a1da6e7c4b89a9089488e310063af0f1e4\\output\\res\\color\\abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "E:\\2017\\InfoMind\\jejuFarm (2)\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_light.xml",
+        "source": "C:\\Users\\Round\\.android\\build-cache\\697503a1da6e7c4b89a9089488e310063af0f1e4\\output\\res\\color\\abc_primary_text_material_light.xml"
+    },
+    {
+        "merged": "E:\\2017\\InfoMind\\github\\jejuFarm (2)\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_dark.xml",
+        "source": "C:\\Users\\Round\\.android\\build-cache\\697503a1da6e7c4b89a9089488e310063af0f1e4\\output\\res\\color\\abc_primary_text_material_dark.xml"
+    },
+    {
+        "merged": "E:\\2017\\InfoMind\\jejuFarm (2)\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_background_cache_hint_selector_material_dark.xml",
+        "source": "C:\\Users\\Round\\.android\\build-cache\\697503a1da6e7c4b89a9089488e310063af0f1e4\\output\\res\\color\\abc_background_cache_hint_selector_material_dark.xml"
+    },
+    {
+        "merged": "E:\\2017\\InfoMind\\jejuFarm (2)\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_background_cache_hint_selector_material_light.xml",
+        "source": "C:\\Users\\Round\\.android\\build-cache\\697503a1da6e7c4b89a9089488e310063af0f1e4\\output\\res\\color\\abc_background_cache_hint_selector_material_light.xml"
+    },
+    {
+        "merged": "E:\\2017\\InfoMind\\jejuFarm (2)\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_light.xml",
+        "source": "C:\\Users\\Round\\.android\\build-cache\\697503a1da6e7c4b89a9089488e310063af0f1e4\\output\\res\\color\\abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "E:\\2017\\InfoMind\\jejuFarm (2)\\app\\build\\intermediates\\res\\merged\\debug\\color\\wallet_secondary_text_holo_dark.xml",
+        "source": "C:\\Users\\Round\\.android\\build-cache\\e68224b4a28c39f12e908ddbd283420dddfced9a\\output\\res\\color\\wallet_secondary_text_holo_dark.xml"
+    },
+    {
+        "merged": "E:\\2017\\InfoMind\\jejuFarm (2)\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_dark.xml",
+        "source": "C:\\Users\\Round\\.android\\build-cache\\697503a1da6e7c4b89a9089488e310063af0f1e4\\output\\res\\color\\abc_secondary_text_material_dark.xml"
+    },
+    {
+        "merged": "E:\\2017\\InfoMind\\github\\jejuFarm (2)\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_background_cache_hint_selector_material_light.xml",
+        "source": "C:\\Users\\Round\\.android\\build-cache\\697503a1da6e7c4b89a9089488e310063af0f1e4\\output\\res\\color\\abc_background_cache_hint_selector_material_light.xml"
+    },
+    {
+        "merged": "E:\\2017\\InfoMind\\github\\jejuFarm (2)\\app\\build\\intermediates\\res\\merged\\debug\\color\\wallet_primary_text_holo_light.xml",
+        "source": "C:\\Users\\Round\\.android\\build-cache\\e68224b4a28c39f12e908ddbd283420dddfced9a\\output\\res\\color\\wallet_primary_text_holo_light.xml"
+    },
+    {
+        "merged": "E:\\2017\\InfoMind\\jejuFarm (2)\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_dark.xml",
+        "source": "C:\\Users\\Round\\.android\\build-cache\\697503a1da6e7c4b89a9089488e310063af0f1e4\\output\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
+        "merged": "E:\\2017\\InfoMind\\jejuFarm (2)\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_signin_btn_text_light.xml",
+        "source": "C:\\Users\\Round\\.android\\build-cache\\e68224b4a28c39f12e908ddbd283420dddfced9a\\output\\res\\color\\common_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "E:\\2017\\InfoMind\\github\\jejuFarm (2)\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_background_cache_hint_selector_material_dark.xml",
+        "source": "C:\\Users\\Round\\.android\\build-cache\\697503a1da6e7c4b89a9089488e310063af0f1e4\\output\\res\\color\\abc_background_cache_hint_selector_material_dark.xml"
+    },
+    {
+        "merged": "E:\\2017\\InfoMind\\jejuFarm (2)\\app\\build\\intermediates\\res\\merged\\debug\\color\\wallet_primary_text_holo_light.xml",
+        "source": "C:\\Users\\Round\\.android\\build-cache\\e68224b4a28c39f12e908ddbd283420dddfced9a\\output\\res\\color\\wallet_primary_text_holo_light.xml"
+    },
+    {
+        "merged": "E:\\2017\\InfoMind\\github\\jejuFarm (2)\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_signin_btn_text_light.xml",
+        "source": "C:\\Users\\Round\\.android\\build-cache\\e68224b4a28c39f12e908ddbd283420dddfced9a\\output\\res\\color\\common_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "E:\\2017\\InfoMind\\github\\jejuFarm (2)\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_light.xml",
+        "source": "C:\\Users\\Round\\.android\\build-cache\\697503a1da6e7c4b89a9089488e310063af0f1e4\\output\\res\\color\\abc_primary_text_material_light.xml"
+    },
+    {
+        "merged": "E:\\2017\\InfoMind\\github\\jejuFarm (2)\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\Round\\.android\\build-cache\\e68224b4a28c39f12e908ddbd283420dddfced9a\\output\\res\\color\\common_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "E:\\2017\\InfoMind\\github\\jejuFarm (2)\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_search_url_text.xml",
+        "source": "C:\\Users\\Round\\.android\\build-cache\\697503a1da6e7c4b89a9089488e310063af0f1e4\\output\\res\\color\\abc_search_url_text.xml"
+    },
+    {
+        "merged": "E:\\2017\\InfoMind\\jejuFarm (2)\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_dark.xml",
+        "source": "C:\\Users\\Round\\.android\\build-cache\\697503a1da6e7c4b89a9089488e310063af0f1e4\\output\\res\\color\\abc_primary_text_material_dark.xml"
+    },
+    {
+        "merged": "E:\\2017\\InfoMind\\jejuFarm (2)\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_search_url_text.xml",
+        "source": "C:\\Users\\Round\\.android\\build-cache\\697503a1da6e7c4b89a9089488e310063af0f1e4\\output\\res\\color\\abc_search_url_text.xml"
+    },
+    {
+        "merged": "E:\\2017\\InfoMind\\github\\jejuFarm (2)\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_dark.xml",
+        "source": "C:\\Users\\Round\\.android\\build-cache\\697503a1da6e7c4b89a9089488e310063af0f1e4\\output\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
+        "merged": "E:\\2017\\InfoMind\\github\\jejuFarm (2)\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_light.xml",
+        "source": "C:\\Users\\Round\\.android\\build-cache\\697503a1da6e7c4b89a9089488e310063af0f1e4\\output\\res\\color\\abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "E:\\2017\\InfoMind\\github\\jejuFarm (2)\\app\\build\\intermediates\\res\\merged\\debug\\color\\wallet_secondary_text_holo_dark.xml",
+        "source": "C:\\Users\\Round\\.android\\build-cache\\e68224b4a28c39f12e908ddbd283420dddfced9a\\output\\res\\color\\wallet_secondary_text_holo_dark.xml"
+    },
+    {
+        "merged": "E:\\2017\\InfoMind\\github\\jejuFarm (2)\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_dark.xml",
+        "source": "C:\\Users\\Round\\.android\\build-cache\\697503a1da6e7c4b89a9089488e310063af0f1e4\\output\\res\\color\\abc_secondary_text_material_dark.xml"
+    },
+    {
+        "merged": "E:\\2017\\InfoMind\\jejuFarm (2)\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\Round\\.android\\build-cache\\e68224b4a28c39f12e908ddbd283420dddfced9a\\output\\res\\color\\common_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "E:\\2017\\InfoMind\\jejuFarm (2)\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_light.xml",
+        "source": "C:\\Users\\Round\\.android\\build-cache\\697503a1da6e7c4b89a9089488e310063af0f1e4\\output\\res\\color\\abc_secondary_text_material_light.xml"
+    }
+]

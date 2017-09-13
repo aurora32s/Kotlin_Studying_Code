@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+
+	<meta http-equiv="Cache-Control" content="no-cache"/>
+	<meta http-equiv="Expires" content="0"/>
+	<meta http-equiv="Pragma" content="no-cache"/>
+
+	<title>농업기술원 모바일 서비스 1차</title>
+	<link type="text/css" href="../css/smart/style_farm.css" rel="stylesheet" />
+	<link rel="stylesheet" href="../css/egovframework/mbl/cmm/jquery.mobile-1.0b3.min.css" />
+	<link rel="stylesheet" href="../css/egovframework/mbl/cmm/EgovMobile.css" />
+	<link rel="stylesheet" type="text/css" href="../css/smart/jquery.fancybox-1.3.4.css" media="screen" />
+	<script type="text/javascript" src="../js/smart/jquery-1.7.min.js"></script>
+	<script type="text/javascript" src="../js/smart/common.js"></script>
+
+
+	<script type="text/javaScript" language="javascript" defer="defer">
+
+$(document).ready(function() {
+
+	if (window.ASNS != null) {
+		window.ASNS.getPhoneNumber();
+	}
+	else {
+		window.localStorage.setItem("TEL", '01000000000');
+	}
+	imagefade();
+	initTab1();
+
+	commentMsg();
+
+
+})
+
+
+   $.getJSON(farm_url + "/app/farm/AG50.do", $('#stationVO').serialize(), function(json){
+        var html = '';
+
+
+        if(json.resultList.length) {
+
+            var vo = json.resultList[0];
+
+            html   +=  '<div class="td_red_cmt">'+vo.etc1+'</div>';
+
+            $('#commentMsg').html(html);
+
+        }
+
+
+    });
+
+
+function initTab1() {
+
+	$.getJSON(farm_url + "/app/farm/AG50_01_L.do", $('#stationVO').serialize(), function(json){
+		var html = '';
+
+		for (var i = 0; i < json.resultList.length ; i++) {
+			var vo = json.resultList[i];
+			// html+ = '<A HREF="javascript:chart('+vo.locCde+');">';
+
+
+			 html   += '<div class="td1">'+vo.areaNm+'</div></a>';
+			 html   +=  '<div class="td2">'+vo.alt+'</div>';
+
+			 html   +=  '<div class="td2">'+vo.g14+'</div>';
+			 html   +=  '<div class="td2">'+vo.kpa+'</div>';
+
+			 if ( vo.kpa != '-' && vo.kpa > 100 ){
+				 html   +=  '<div class="td_red">'+vo.status+'</div>';
+			 }else{
+
+			 	html   +=  '<div class="td2">'+vo.status+'</div>';
+			}
+			 //html   +=  '<a href=javascript:insert_region("'+vo.locCde+'","'+vo.locNam+'"); rel="external" data-ajax="false"><div class="td4"> + </div></a>';
+			 html   +=  '<div style="clear:both;"></div>';
+
+			$('#ob').html(html);
+
+		}
+		$('#LoadingImage').hide();
+	});
+}
+
+function change_menu(number) { //OnClick
+		$("#tab1").removeClass("tab");
+		$("#tab_left1").removeClass("tab_left");
+		$("#tab_right1").removeClass("tab_right");
+		$("#tab2").removeClass("tab");
+		$("#tab_left2").removeClass("tab_left");
+		$("#tab_right2").removeClass("tab_right");
+		$("#tab3").removeClass("tab");
+		$("#tab_left3").removeClass("tab_left");
+		$("#tab_right3").removeClass("tab_right");
+		$("#list1").removeClass("select");
+		$("#list2").removeClass("select");
+		$("#list3").removeClass("select");
+		for (i = 1; i <= 3; i++) {
+			if (i == number) {
+				document.getElementById("menu" + number).style.display = "block";
+
+				$("#tab" + number).addClass("tab");
+				$("#tab_left" + number).addClass("tab_left");
+				$("#tab_right" + number).addClass("tab_right");
+				$("#list" + number).addClass("select");
+
+				if (i == 2) {
+					initTab2();
+				}
+				if (i == 3) {
+					initTab3();
+				}
+			} else {
+				document.getElementById("menu" + i).style.display = "none";
+
+			}
+		}
+	}
+
+function chart(number) {
+	window.localStorage.setItem("LOC_CDE", number);
+	location.href="AG03_01_chart.html"
+}
+
+function insert_region(code, name) {
+	var areacd = code;
+	var areanm = name;
+	var tel = window.localStorage.getItem("TEL");
+	var msg ;
+	$.getJSON(farm_url + "/app/farm/INSERT_FROST.do?areacd=" + areacd + "&tel=" + tel, $('#stationVO').serialize(), function(data){
+
+		vo = data.info;
+		msg ="지역추가완료 : " + name;
+		// 0 = 제한초과 , 1 = 등록완료, ,2 = 중복
+		if (vo == 0) {
+
+			msg = "지역추가는 5개 이하만 가능 합니다.";
+		}
+		if (vo == 2) {
+			msg = "이미 추가된 지역입니다.";
+		}
+		alert(msg);
+	});
+
+}
+
+function delete_region(name) {
+	db.transaction(
+			function(tx){
+				 //tx.executeSql("DROP TABLE area ");
+
+				tx.executeSql("DELETE FROM " + table + " WHERE NAME ='"+name+"'");
+			},
+			function(tx,err){
+				alert("DB생성 에러 : " + err);
+			},
+			function(){
+			}
+	);
+}
+
+function fn_setPhoneNumber(phoneNumber){
+
+	window.localStorage.setItem("TEL", phoneNumber);
+	// document.getElementById("").value = phoneNumber;
+}
+
+</script>
+
+	<style>
+		#table {font-size:9pt;}
+		#table2 {font-size:9pt;}
+		#table2_row1_left {text-align:center; width:100%; height:44px; line-height:44px;border:1px solid black;background-color:#f6f6f6;}
+		#table2_row1_right {float:right; margin:8px 10px 0 0; width:64px; height:32px; line-height:32px; text-align:center; font-size:14px;background:url("../images/weather/btn_del.png");color:#fff;}
+		#table2_row2_left {text-align:center; width:100%; height:44px; line-height:44px;border:1px solid black;background-color:#f6f6f6;}
+		#table2_row2_right {float:right; margin:8px 10px 0 0; width:64px; height:32px; line-height:32px; text-align:center; font-size:14px;background:url("../images/weather/btn_del.png");color:#fff;}
+		#table2_row3_left {text-align:center; width:100%; height:44px; line-height:44px;border:1px solid black;background-color:#f6f6f6;}
+		#table2_row3_right {float:right; margin:8px 10px 0 0; width:64px; height:32px; line-height:32px; text-align:center; font-size:14px;background:url("../images/weather/btn_del.png");color:#fff;}
+		#table2_row4_left {text-align:center; width:100%; height:44px; line-height:44px;border:1px solid black;background-color:#f6f6f6;}
+		#table2_row4_right {float:right; margin:8px 10px 0 0; width:64px; height:32px; line-height:32px; text-align:center; font-size:14px;background:url("../images/weather/btn_del.png");color:#fff;}
+		#table2_row5_left {text-align:center; width:100%; height:44px; line-height:44px;border:1px solid black;background-color:#f6f6f6;}
+		#table2_row5_right {float:right; margin:8px 10px 0 0; width:64px; height:32px; line-height:32px; text-align:center; font-size:14px;background:url("../images/weather/btn_del.png");color:#fff;}
+		.td1 {float:left;height:25px;padding-top:9px;width:15%;border:1px solid black;background-color:#f6f6f6;}
+		.td2 {float:left;height:25px;padding-top:9px;width:20%;border:1px solid black;}
+		.td3 {float:left;height:25px;padding-top:9px;width:20%;border:1px solid black;}
+		.td4 {float:left;height:25px;padding-top:9px;width:8%;border:1px solid black;}
+
+
+		.td_red {float:left;height:25px;padding-top:9px;width:20%;border:1px solid black;color:red; }
+
+
+		.td_red_cmt { color:red; }
+
+
+
+
+	</style>
+</head>
+
+<body>
+<div id="wrap">
+	<div id="header" class="h_bg02_etc">
+		<h2>농업기술원</h2>
+		<a href="index.html" rel="external" data-ajax="false" class="btn_home"><img src="../images/smart/main/home.png" alt="홈으로" width="32" height="29"/></a>
+		<div class="sitemap">
+			<a href="javascript:sitemap_onoff();"><img src="../images/smart/main/sitemap.png" alt="사이트맵" width="32" height="29"/></a>
+		</div>
+	</div>
+	<!-- // header -->
+	<!-------------------------사이트맵 메뉴 ------------------------- -->
+	<div class="sitemap04" style="display:none">
+		<table cellspacing="0">
+			<colgroup>
+				<col width="35%" />
+
+				<col width="65%" />
+			</colgroup>
+			<tbody>
+			<tr>
+				<th>Smart 기상정보 서비스</th>
+				<td>
+					<ul>
+						<li><a href="AG02_01.html">동네예보</a></li>
+						<li><a href="AG03_01.html">서리정보(저온)</a></li>
+						<li><a href="BG_01.html">기상특보</a></li>
+						<li><a href="AG02_02.html" rel="external" data-ajax="false">제주 기상</a></li>
+						<li><a href="AG02_03.html" rel="external" data-ajax="false">태풍정보</a></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<th>Smart SNS서비스</th>
+				<td>
+					<a href="javascript:go_sns();">영농상담</a>
+				</td>
+			</tr>
+			<tr>
+				<th>Smart 실시간 영농정보제공 서비스</th>
+				<td>
+					<ul>
+						<li><a href="AG04_01.html" rel="external" data-ajax="false">주간영농정보</a></li>
+						<li><a href="AG04_02.html" rel="external" data-ajax="false">병해충방제정보</a></li>
+						<li><a href="AG04_03.html" rel="external" data-ajax="false">병해충도감</a></li>
+						<!-- <li><a href="AG04_04.html" rel="external" data-ajax="false">병해충발생</a></li> -->
+						<li><a href="AG04_05.html" rel="external" data-ajax="false">병해충발생</a></li>
+						<li><a href="AG04_06.html" rel="external" data-ajax="false">작물보호제(농약지침)</a></li>
+						<li class="last"><a href="AG04_07.html" rel="external" data-ajax="false">보호제혼용</a></li>
+					</ul>
+				</td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+	<!-- // 사이트맵 -->
+	<div id="content">
+		<div class="sub_title">
+			<h3>가뭄 정보</h3>
+		</div>
+
+
+		<div id="menu1" style="display: block;">
+			<div class="sub_con">
+				<a  target="_blank" href="http://ipm.agri.jeju.kr/develope/weather/weather0304_m.php"> 그래프로 보기</a>
+
+				<p id="commentMsg"></p>
+
+				<div id="table">
+					<div style="float:left;width:15%; border-top:2px solid black; border-right:1px solid black; border-bottom:1px solid black; border-left:1px solid black;background-color:#f6f6f6;height:25px;padding-top:9px;">관측지점</div>
+					<div style="float:left;width:20%;border-top:2px solid black; border-right:1px solid black; border-bottom:1px solid black; border-left:1px solid black;background-color:#f6f6f6;height:25px;padding-top:9px;">고도(M)</div>
+
+					<div style="float:left;width:20%;border-top:2px solid black; border-right:1px solid black; border-bottom:1px solid black; border-left:1px solid black;background-color:#f6f6f6;height:25px;padding-top:9px;">용적수분(%)</div>
+					<div style="float:left;width:20%;border-top:2px solid black; border-right:1px solid black; border-bottom:1px solid black; border-left:1px solid black;background-color:#f6f6f6;height:25px;padding-top:9px;">가뭄지수(kpa)</div>
+					<div style="float:left;width:20%;border-top:2px solid black; border-right:1px solid black; border-bottom:1px solid black; border-left:1px solid black;background-color:#f6f6f6;height:25px;padding-top:9px;">가뭄상태</div>
+
+					<!-- <div style="float:left;width:8%;border-top:2px solid black; border-right:1px solid black; border-bottom:1px solid black; border-left:1px solid black;background-color:#f6f6f6;height:50px;padding-top:17px;">추가</div>
+                     -->
+					<div style="clear:both;"></div>
+					<div id="ob"></div>
+					<div style="clear:both;"></div>
+
+
+
+
+
+
+
+					<div id="info"><img id="LoadingImage" src="../images/smart/loading_animation2.gif" width="276" height="240"></div>
+				</div>
+			</div>
+		</div>
+
+		<div id="menu2" style="display: none;">
+
+			<div class="sub_con">
+				<div id="table2">
+					<!--
+                    <div id="table2_row1_left"><span id="locationName1">선택된 지역이 없음</span><div id="table2_row2_right">삭제</div></div>
+                    <div id="table2_row2_left"><span id="locationName2">선택된 지역이 없음</span><div id="table2_row2_right">삭제</div></div>
+                    <div id="table2_row3_left"><span id="locationName3">선택된 지역이 없음</span><div id="table2_row3_right">삭제</div></div>
+                    <div id="table2_row4_left"><span id="locationName4">선택된 지역이 없음</span><div id="table2_row4_right">삭제</div></div>
+                    <div id="table2_row5_left"><span id="locationName5">선택된 지역이 없음</span><div id="table2_row5_right">삭제</div></div>
+                     -->
+					<div id="ob2"></div>
+				</div>
+			</div>
+		</div>
+
+		<div id="menu3" style="display: none;">
+
+			<!--
+                푸쉬알림을 받은 메시지 리스트 보여주기(총 10개) - 추가된 지역으로 발송된...
+            -->
+			<div class="sub_con">
+				<div id="messageList"></div>
+			</div>
+		</div>
+	</div>
+	<!-- //contents -->
+
+
+	<div id="footer">
+		<a href="index.html" rel="external" data-ajax="false">홈으로</a>|
+		<a href="javascript:back_top()" class="gotop"><img src="../images/smart/main/arrow.png"  width="9" height="10"/>맨 위로</a>
+		<address><img src="../images/smart/footer_c.png" alt="ⓒ제주 농업기술원" width="8" height="8"/> 제주 농업기술원</address>
+	</div>
+	<!-- //footer -->
+</div>
+<!-- wrap -->
+</body>
+</html>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, SNSActivity!</string>
+    <string name="app_name">제주영농정보</string>
+    <string name="dialog_message">제주영농정보를 종료하시겠습니까?</string>
+    <string name="dialog_positivebtn">예</string>
+    <string name="dialog_negativebtn">아니요</string>
+
+</resources>

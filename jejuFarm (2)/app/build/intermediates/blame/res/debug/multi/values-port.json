@@ -1,0 +1,50 @@
+[
+    {
+        "outputFile": "E:\\2017\\InfoMind\\jejuFarm (2)\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-port\\values-port.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 55,
+                    "endOffset": 106
+                },
+                "from": {
+                    "file": "C:\\Users\\Round\\.android\\build-cache\\697503a1da6e7c4b89a9089488e310063af0f1e4\\output\\res\\values-port\\values.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 56,
+                        "endColumn": 55,
+                        "endOffset": 107
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "E:\\2017\\InfoMind\\github\\jejuFarm (2)\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-port\\values-port.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 55,
+                    "endOffset": 106
+                },
+                "from": {
+                    "file": "C:\\Users\\Round\\.android\\build-cache\\697503a1da6e7c4b89a9089488e310063af0f1e4\\output\\res\\values-port\\values.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 56,
+                        "endColumn": 55,
+                        "endOffset": 107
+                    }
+                }
+            }
+        ]
+    }
+]

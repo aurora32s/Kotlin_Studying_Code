@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="E:\2017\InfoMind\jejuFarm (2)\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="E:\2017\InfoMind\jejuFarm (2)\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_e26fb5c32145a360277f152b52c2afcdbef77c6f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\2017\InfoMind\jejuFarm (2)\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="126a5b4bdfb98de8155ddd89498c2bfca1730c4d">
+        <dex dex="E:\2017\InfoMind\jejuFarm (2)\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_4666b283b46724759d85e15cda063686160e8584\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\2017\InfoMind\github\jejuFarm (2)\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="E:\2017\InfoMind\github\jejuFarm (2)\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_9364ed87fec9f6dd5e378c2ed1398c1354665418\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\2017\InfoMind\github\jejuFarm (2)\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="096c4f03a3c76c723ef63072b69df118b3092b14">
+        <dex dex="E:\2017\InfoMind\github\jejuFarm (2)\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_52a869dd5629b622e93f902485a06f3ea74125ba\classes.dex" />
+    </item>
+
+</items>
