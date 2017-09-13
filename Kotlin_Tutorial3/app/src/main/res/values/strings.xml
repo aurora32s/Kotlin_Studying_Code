@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Kotlin_Tutorial3</string>
+    <string name="game_start">게임시작</string>
+    <string name="information1">0 ~ 999중에 \n 원하는 숫자 하나를 선택하십시오.\n(단 중복되는 숫자가 있으면 안 됩니다.)</string>
+    <string name="zero">0</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>v
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="select">선택완료</string>
+</resources>

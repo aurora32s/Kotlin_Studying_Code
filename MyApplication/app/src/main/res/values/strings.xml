@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Android_HTML_WebView</string>
+    <string name="hello">Hello World, Android HTML Activity!</string>
+</resources>

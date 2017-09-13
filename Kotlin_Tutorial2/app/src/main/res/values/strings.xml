@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Kotlin_Tutorial2</string>
+    <string name="start_count">0</string>
+    <string name="increase">+</string>
+    <string name="decrease">-</string>
+    <string name="reset">Reset</string>
+</resources>

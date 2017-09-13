@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Kotlin_Networking</string>
+    <string name="news_api_key" translatable="false">9eb22de881094ca68af1d141b5198dba</string>
+</resources>
