@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Kotlin_Reverse_GeoCoding</string>
+    <string name="getAddress">Get Address</string>
+    <string name="address" translatable="false">%s</string>
+</resources>

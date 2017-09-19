@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         val name : String = textView.text.toString()
         val intent : Intent = Intent(this, NationDetailActivity::class.java)
 
-        intent.putExtra(NationDetaliActivity.EXTRA_NATION_NAME,name)
+        intent.putExtra(NationDetailActivity.EXTRA_NATION_NAME,name)
         startActivity(intent)
     }
 }
