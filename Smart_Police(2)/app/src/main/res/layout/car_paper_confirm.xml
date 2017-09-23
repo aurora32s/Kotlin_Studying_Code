@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/grid_table"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="2017-000029-00"
+            android:textColor="#000000"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/grid_table"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="140sp"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:background="@drawable/grid_table"
+            android:text="일시" />
+
+        <TextView
+            android:id="@+id/dateConfirm"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/grid_table"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="140sp"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:background="@drawable/grid_table"
+            android:text="장소" />
+
+        <TextView
+            android:id="@+id/place"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/grid_table"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="140sp"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:background="@drawable/grid_table"
+            android:text="납부기한(1차)" />
+
+        <TextView
+            android:id="@+id/firstDate"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/grid_table"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="140sp"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:background="@drawable/grid_table"
+            android:text="납부기한(2차)" />
+
+        <TextView
+            android:id="@+id/secondDate"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/grid_table"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="140sp"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:background="@drawable/grid_table"
+            android:text="주민번호" />
+
+        <TextView
+            android:id="@+id/personNo"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/grid_table"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="140sp"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:background="@drawable/grid_table"
+            android:text="성명" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/grid_table"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="140sp"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:background="@drawable/grid_table"
+            android:text="범칙내용" />
+
+        <TextView
+            android:id="@+id/crime"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/grid_table"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="140sp"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:background="@drawable/grid_table"
+            android:text="범칙금(1차)" />
+
+        <TextView
+            android:id="@+id/firstCost"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/grid_table"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="140sp"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:background="@drawable/grid_table"
+            android:text="범칙금(2차)" />
+
+        <TextView
+            android:id="@+id/secondCost"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/change"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="수정"/>
+
+        <Button
+            android:id="@+id/confirm"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="확인"/>
+    </LinearLayout>
+</LinearLayout>
