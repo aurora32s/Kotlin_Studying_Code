@@ -1,2 +1,5 @@
 # Android Studio(Kotlin)
-InternShip : Smart Police Project
+
+Only for Studying Kotlin
+
+So, just Example Code
